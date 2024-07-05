@@ -1,14 +1,22 @@
 // DO NOT DELETE
 
-import './App.css'
+import './App.css';
+import { Header } from './Header'
+import { Description } from './Description'
+import { DogListContainer } from './DogListContainer'
 
 /**
  * @type {() => JSX.Element}
  */
 export const App = () => {
+  const headerText = 'Railway React 0-11';
+  const explainText = '犬の画像を表示するサイトです';
+
   return (
     <div>
-      <h2>Hello, world!</h2>
+      <Header text={headerText}/>
+      <Description text={explainText}/>
+      <DogListContainer />
     </div>
   )
 }
